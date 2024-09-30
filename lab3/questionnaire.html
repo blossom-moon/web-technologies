@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Анкета про книги</title>
+</head>
+<body>
+<h1>Анкета про книги</h1>
+
+  <fieldset>
+    <legend>Особисті дані</legend>
+    <label for="name">Ваше ім'я:</label>
+    <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required>
+    <br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="example@example.com" required autocomplete="off" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+    <br>
+
+    <label for="phone">Мобільний номер:</label>
+    <input type="tel" id="phone" name="phone" placeholder="+380XXXXXXXXX" pattern="\+380[0-9]{9}">
+    <br>
+
+    <label for="password">Пароль:</label>
+    <input type="password" id="password" name="password" placeholder="Введіть пароль" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{6,}">
+    <br>
+
+    <label for="dob">Дата народження:</label>
+    <input type="date" id="dob" name="dob">
+    <br>
+  </fieldset>
+
+  <fieldset>
+    <legend>Інформація про книгу яку ви читали востаннє</legend>
+    <label for="title">Назва книги:</label>
+    <input type="text" id="title" name="title" placeholder="Введіть назву книги" required>
+    <br>
+
+    <label for="author">Автор:</label>
+    <input type="text" id="author" name="author" placeholder="Введіть автора книги">
+    <br>
+
+    <label for="genre">Жанр:</label>
+    <select id="genre" name="genre">
+      <option value="adventure">Пригоди</option>
+      <option value="romance">Романтика</option>
+      <option value="history">Історія</option>
+      <option value="thriller">Трилер</option>
+      <option value="science">Наука</option>
+      <option value="mystery">Містика</option>
+
+    </select>
+    <br>
+
+    <label for="review">Ваш відгук:</label>
+    <textarea id="review" name="review" rows="4" cols="50" placeholder="Ваш відгук про книгу"></textarea>
+    <br>
+  </fieldset>
+
+  <fieldset>
+    <legend>Вибір жанру</legend>
+    <label>Виберіть жанр Вашої улюбленої книги:</label>
+    <br>
+    <input type="radio" id="genre_fantasy" name="fav_genre" value="fantasy" checked>
+    <label for="genre_fantasy">Фентезі</label>
+    <br>
+
+    <input type="radio" id="genre_mystery" name="fav_genre" value="mystery">
+    <label for="genre_mystery">Містика</label>
+    <br>
+
+    <input type="radio" id="genre_sci-fi" name="fav_genre" value="sci-fi">
+    <label for="genre_sci-fi">Наукова фантастика</label>
+    <br>
+
+    <input type="radio" id="genre_proza" name="fav_genre" value="proza" checked>
+    <label for="genre_proza">Проза</label>
+    <br>
+
+    <input type="radio" id="genre_romance" name="fav_genre" value="romance">
+    <label for="genre_romance">Романтика</label>
+    <br>
+
+    <input type="radio" id="genre_detective" name="fav_genre" value="detective">
+    <label for="genre_detective">Детектив</label>
+    <br>
+
+    <input type="radio" id="genre_drama" name="fav_genre" value="drama">
+    <label for="genre_drama">Драма</label>
+    <br>
+  </fieldset>
+
+  <fieldset>
+    <legend>Вибір читання</legend>
+    <label>Чи любите ви читати книги у певних форматах?</label>
+    <br>
+    <input type="radio" id="format_e-book" name="fav_format" value="e-book" checked>
+    <label for="format_e-book">Електронні книги</label>
+    <br>
+
+    <input type="radio" id="format_audiobook" name="fav_format" value="audiobook">
+    <label for="format_audiobook">Аудіокниги</label>
+    <br>
+
+    <input type="radio" id="format_paperback" name="fav_format" value="paperback">
+    <label for="format_paperback">Паперові книги</label>
+    <br>
+  </fieldset>
+
+  <fieldset>
+    <legend>Формат книги</legend>
+    <label>Які книги вам більше довподоби?</label>
+    <br>
+    <input type="checkbox" id="format1" name="format" value="e-book">
+    <label for="format1">Електронні книги</label>
+    <br>
+
+    <input type="checkbox" id="format2" name="format" value="audiobook">
+    <label for="format2">Аудіокниги</label>
+    <br>
+
+    <input type="checkbox" id="format3" name="format" value="paperback">
+    <label for="format3">М'яка обкладинка</label>
+    <br>
+
+    <input type="checkbox" id="format4" name="format" value="hardcover">
+    <label for="format4">Тверді обкладинки</label>
+    <br>
+  </fieldset>
+
+<form action="" method="get" enctype="multipart/form-data">
+  <fieldset>
+    <legend>Завантаження файлів</legend>
+    <label for="files">Завантажте аудіофайли:</label>
+    <input type="file" id="files" name="files[]" accept="audio/*" multiple>
+    <br>
+  </fieldset>
+
+  <fieldset>
+    <button type="submit">Відправити</button>
+    <button type="reset">Скинути</button>
+  </fieldset>
+</form>
+</body>
+</html>

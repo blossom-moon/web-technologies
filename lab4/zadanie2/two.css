@@ -1,0 +1,51 @@
+/* Універсальний селектор */
+* {
+    font-family: Arial, sans-serif; /* Шрифт Arial */
+    font-size: 20px; /* Розмір шрифту 20px */
+    line-height: 40px; /* Інтервал між рядками 40px */
+}
+
+/* Стилі для абзаців */
+p {
+    color: green; /* Зелений колір тексту */
+    text-align: center; /* Текст по центру */
+}
+
+/* Червоний текст для абзаців з класом red-text */
+.red-text {
+    color: red;
+}
+.highlight {
+    background-color: yellow; /* Жовтий фон для виділення */
+    font-weight: bold; /* Жирний шрифт */
+}
+
+/* Заборона перенесення рядка */
+.no-wrap {
+    white-space: nowrap;
+}
+
+/* Стилі для абзацу з ідентифікатором italic-bold */
+#italic-bold {
+    font-style: italic; /* Курсив */
+    font-weight: bold; /* Жирний текст */
+}
+
+/* Тінь для тексту */
+.shadow {
+    text-shadow: 5px -5px 3px rgba(0, 0, 255, 0.7); /* Тінь для тексту */
+}
+
+/* Блочний елемент з перекресленим текстом, верхнім регістром та відступом першого рядка */
+.block1 {
+    text-decoration: line-through; /* Перекреслений текст */
+    text-transform: uppercase; /* Текст у верхньому регістрі */
+    text-indent: 50px; /* Відступ першого рядка */
+}
+
+/* Відстань між символами та словами */
+.block2 {
+    letter-spacing: 30px; /* Відстань між символами */
+    word-spacing: 50px; /* Відстань між словами */
+}
+

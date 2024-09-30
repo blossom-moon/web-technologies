@@ -1,0 +1,66 @@
+.text-background1{
+    color: #000000;
+    text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5);
+}
+.kursiv {
+    font-weight: bold; 
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.vidctupbukv{
+    word-spacing: 30px;
+}
+
+.videltext{
+    background-color: yellow;
+    font-weight: bold; 
+    font-style: italic;
+    text-decoration: underline;
+    /* word-spacing: 20px; */
+}
+.kursivv{
+    font-weight: bold; 
+    font-style: italic;
+    text-decoration: underline;
+    background-color: yellow;
+}
+
+.red{
+    background-color: rgb(188, 0, 0);
+}
+
+.text-background{
+    color: #000000;
+    text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.831);
+}
+
+.perekleslenevel{
+    background-color: rgba(31, 31, 31, 0.753);
+    text-transform: uppercase;
+    text-decoration: line-through;
+}
+
+.lefr{
+    padding-left: 23px;
+}
+
+.pere4orkn1{
+    background-color: rgba(31, 31, 31, 0.753);
+    text-decoration: line-through;
+}
+
+.zirne{
+    font-weight: bold; 
+}
+
+.otstup{
+    text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.831);
+    text-indent: 30px;
+    line-height: 3;
+}
+
+.redtext{
+    color: red;
+    font-weight: bold; 
+}

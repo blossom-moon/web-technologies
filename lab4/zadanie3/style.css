@@ -1,0 +1,35 @@
+/* a {
+    color: violet;
+    text-decoration: none;
+}
+
+
+.main-menu a {
+    color: green;
+} */
+ .fruits{
+    color: green;
+ }
+
+ .fiolet{
+    color: mediumpurple;
+ }
+
+
+.vidst{
+    padding-left: 23px;
+}
+
+.black {
+    color: black;
+    text-decoration: none
+}
+.berry-list {
+    list-style-type: square; /* змінює маркер на квадрат */
+}
+
+
+.misc a {
+    text-decoration: none;
+}
+
