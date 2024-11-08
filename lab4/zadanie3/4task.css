@@ -9,28 +9,26 @@
 .text-background div > span {
     background-color: yellow;
 }
+.square-marker {
+    list-style-type: square; /* Змінює тип маркера на квадрат */
+}
 
 /* 4.3 */
 span > span {
     color: gray;
     text-decoration: line-through;
 }
-
-/* 4.4 */
-ol span > span {
-    font-size: 18px;
-    text-transform: uppercase;
-}
-
 /* 4.5 */
 section > p {
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
     text-indent: 50px;
 }
+div ul ul {
+    list-style-type: none; /* Прибирає маркери у вкладених списках */
+}
 
-/* 4.6 */
-li > ul {
-    list-style-image: url('your-image-url.png');
+.icon-marker {
+    list-style-image: url('li.svg'); /* Використовує піктограму замість маркера */
 }
 
 /* 4.7 */

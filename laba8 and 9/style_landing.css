@@ -1,0 +1,360 @@
+@font-face {
+	font-family: Bradley Hand, cursive;
+	src: url('//2ttf.com/webfont/6IF8GLA3aiM/webfont.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@200&family=Major+Mono+Display&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+/* div {
+	border: 1px solid red;
+} */
+body {
+	min-height: 100vh;
+}
+.sub_text {
+	color: rgb(0, 0, 0, 0.4);
+	font-family: 'Gluten', cursive;
+}
+/* ! containers */
+.cont {
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	flex-direction: column;
+}
+.menu {
+	width: calc(100% - 335px);
+
+	flex-direction: row;
+	justify-content: space-between;
+
+	padding: 3vh 0;
+}
+.header {
+	background: rgb(240, 244, 245);
+	margin: 5vh 0;
+}
+.body {
+	width: calc(100% - 335px);
+	min-height: 100vh;
+}
+.footer {
+	padding: 0;
+}
+
+/* ! menu */
+.nav_menu {
+	flex-direction: row;
+	justify-content: end;
+	gap: 1vw;
+	text-transform: uppercase;
+	font-family: Bradley Hand, cursive;
+}
+
+.nav_menu div {
+	cursor: pointer;
+	transition: all 0.3s linear;
+	padding: 1vh 1vw;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.nav_menu div:last-child {
+	background: saddlebrown;
+	color: white;
+}
+
+.nav_menu div:last-child:hover {
+	background: saddlebrown;
+}
+
+.nav_menu div:hover {
+	transform: scale(1.1);
+	background: saddlebrown;
+	color: white;
+}
+
+/* ! header */
+
+.header_content {
+	width: calc(100% - 335px);
+	justify-content: start;
+	align-items: start;
+
+	padding: 8vh 0;
+}
+.header_title {
+	margin: 0 0 2vh 0;
+	font-size: 40px;
+	text-transform: uppercase;
+	font-family: Bradley Hand, cursive;
+}
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.logo img {
+	width: 100px;
+	height: 100px;
+}
+.logo_text {
+	font-family: Bradley Hand, cursive ;
+	font-size: 22px;
+}
+.logo_text p {
+	color: saddlebrown;
+}
+.header_subtitle {
+	font-size: 25px;
+}
+@keyframes slide {
+	0% {
+		transform: translateX(-500%) rotate(-300deg);
+	}
+	100% {
+		transform: translateX(0) rotate(300deg);
+	}
+}
+/* ! body */
+
+/* * gallery */
+.gallery {
+	width: 100%;
+	overflow: hidden;
+	gap: 1vw;
+
+
+}
+.gallery_container {
+	flex-direction: column;
+
+}
+
+.gallery_title_container {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	padding: 5vh 0 3vh 0;
+	text-transform: uppercase;
+	height: auto;
+	font-family: Bradley Hand, cursive;
+}
+
+.gallery_row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	gap: 1vw;
+}
+.gallery_item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 33%;
+}
+.gallery_item img {
+	width: 200px;  /* Встановіть потрібну ширину */
+	height: 200px; /* Встановіть потрібну висоту */
+	object-fit: cover;
+}
+
+/* * notice */
+
+.notice_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	margin: 4vh 0;
+	text-transform: uppercase;
+}
+
+.notice_title {
+	margin: 0 0 2vh 0;
+	font-family: Bradley Hand, cursive;
+}
+.red_button {
+	padding: 2vh 1vw;
+	background: saddlebrown;
+	color: white;
+	font-family: Bradley Hand, cursive;
+	cursor: pointer;
+
+	transition: all 0.3s linear;
+}
+.red_button:hover {
+	transform: scale(1.1);
+	background: saddlebrown;
+}
+
+/* * hor_cards */
+
+.hor_cards_container {
+	margin: 5vh 0;
+}
+
+/* ?  pre title*/
+.pre_title_container {
+	width: 100%;
+	display: flex;
+	align-items: start;
+	flex-direction: column;
+	margin: 5vh 0 3vh 0;
+	font-family: Bradley Hand, cursive;
+}
+.pre_title {
+	margin: 0 0 2vh 0;
+	text-transform: uppercase;
+}
+/* ? */
+.hor_cards {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+
+	gap: 3vw;
+}
+.hor_card_item {
+	width: 33%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.hor_card_item * {
+	margin: 1vh 0;
+}
+
+.hor_card_img {
+	width: 100%;
+	height: 33%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.hor_card_img img {
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+}
+.hor_card_title {
+	text-transform: uppercase;
+	font-family: Bradley Hand, cursive;
+}
+
+/* & hor_cards content */
+
+.hor_card_description {
+	text-align: center;
+	margin: 0 12%;
+}
+
+/* * block_cards */
+
+.block_cards_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	flex-direction: column;
+	gap: 2vh;
+}
+
+.block_cards_row {
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+
+	flex-direction: row;
+	gap: 5vw;
+	width: 100%;
+}
+.block_card_container {
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	flex-direction: row;
+
+	width: 50%;
+	height: 100%;
+}
+.block_card_content {
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+
+	flex-direction: column;
+}
+.block_card_content * {
+	margin: 1vh 0;
+}
+.block_card_img {
+	margin: 0 3vw 0 0;
+}
+.block_card_img img {
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+}
+.block_card_title {
+	text-transform: uppercase;
+	font-family: Bradley Hand, cursive;
+}
+
+/* ! footer */
+.footer {
+	flex-direction: column;
+	margin: 10vh 0 0 0;
+	padding: 5vh 0;
+	gap: 2vw;
+
+	background: rgb(41, 41, 44);
+	color: white;
+	font-family: Bradley Hand, cursive;
+}
+
+.footer_icons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	gap: 1vw;
+	padding: 1vh 0;
+	
+}
+.footer_icon {
+	width: 50px;
+	height: 50px;
+}
+.footer_icon img {
+	border-radius: 50%;
+	width: 100%;
+	height: 100%;
+}
+.footer_lala img{
+	width: 20px;  /* Встановіть потрібну ширину */
+	height: 20px; /* Встановіть потрібну висоту */
+	object-fit: cover;
+}
+/* Базове стилювання для секції */
+.our-works {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr); /* 4 колонки */
+	gap: 20px;
+}

@@ -3,10 +3,11 @@
     font-family: Arial, sans-serif; /* Шрифт Arial */
     font-size: 20px; /* Розмір шрифту 20px */
     line-height: 40px; /* Інтервал між рядками 40px */
+    text-align: center
 }
 
 /* Стилі для абзаців */
-p {
+q{
     color: green; /* Зелений колір тексту */
     text-align: center; /* Текст по центру */
 }
@@ -26,9 +27,9 @@ p {
 }
 
 /* Стилі для абзацу з ідентифікатором italic-bold */
-#italic-bold {
+.italic-bold {
     font-style: italic; /* Курсив */
-    font-weight: bold; /* Жирний текст */
+    text-decoration: underline
 }
 
 /* Тінь для тексту */
@@ -49,3 +50,16 @@ p {
     word-spacing: 50px; /* Відстань між словами */
 }
 
+.custom-line {
+    border: none;           /* Відсутня стандартна рамка */
+    border-top: 6px solid ; /* Верхня лінія товщиною 2px і чорного кольору */
+    width: 100%;             /* Ширина лінії - 80% від ширини контейнера */
+    margin: 20px auto; /* Відступ зверху та знизу, центрування лінії */
+color: darkgreen;
+}
+.h1 {
+    color: darkred;
+}
+.italic {
+    font-style: italic;
+}

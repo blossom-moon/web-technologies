@@ -1,0 +1,73 @@
+header img {
+	float: left;
+	width: 100px;
+	height: 100px;
+}
+header ul {
+	list-style: none;
+	margin: 0;
+	padding: 15px;
+	float: right;
+}
+header li {
+	margin: 10px;
+	float: left;
+}
+header li a {
+	display: inline-block;
+	padding: 10px;
+	color: #ffffff;
+	background: rgb(155, 84, 3);
+}
+.container {
+	margin: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.cards-row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+.card {
+	width: 250px;
+	height: 300px;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	margin: 1vw;
+	border: 1px solid #087c23;
+}
+.title,
+.text {
+	padding: 1vw;
+}
+.card img {
+	width: 100%;
+	height: auto;
+}
+.title {
+	font-weight: 700;
+}
+.shadow1 {
+	box-shadow: -5px -5px 0.2em 0.2em green;
+}
+.shadow2 {
+	box-shadow: 0 0 5px 5px green;
+}
+.shadow3 {
+	box-shadow: 0.3em 0.3em 3px 3px rgba(8, 212, 134, 0.389);
+}
+.shadow4 {
+	box-shadow: 0 0 50px green;
+}
+.shadow5 {
+	box-shadow: inset 0px 5px 0px 0px green, inset 0px -5px 0px 0px orange,
+		5px 0px 0px 0px blue, -5px 0px 0px 0px red;
+}
+.shadow6 {
+	box-shadow: 0px -10px 0px -5px orange, 0px 10px 0px -5px green;
+}

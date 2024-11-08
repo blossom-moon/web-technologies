@@ -1,0 +1,161 @@
+header img {
+	float: left;
+	width: 100px;
+	height: 100px;
+}
+header ul {
+	list-style: none;
+	margin: 0;
+	padding: 15px;
+	float: right;
+}
+header li {
+	margin: 10px;
+	float: left;
+}
+header li a {
+	display: inline-block;
+	padding: 10px;
+	color: #ffffff;
+	background: rgb(155, 84, 3);
+}
+main {
+	margin: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.cards-row {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	flex-direction: row;
+}
+.card {
+	width: 300px;
+	height: 400px;
+	background: yellow;
+
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	margin: 1vw;
+	border: 1px solid #333;
+}
+.title {
+	font-size: 25px;
+	font-weight: 700;
+}
+.title,
+.text {
+	padding: 1vw;
+	text-align: center;
+}
+.photo {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.card img {
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+}
+#hidden {
+	opacity: 0;
+}
+.card1 {
+	background-image: linear-gradient(
+		to bottom left,
+		orange,
+		rgb(154, 19, 154),
+		blue,
+		rgb(255, 243, 5),
+		rgb(156, 246, 39),
+		green
+	);
+}
+.card2 {
+	background-color: white;
+	background-image: linear-gradient(
+			45deg,
+			green 16%,
+			white 25%,
+			transparent 25%,
+			transparent 74%,
+			orange 75%,
+			blue
+		),
+		linear-gradient(
+			45deg,
+			yellow 16%,
+			white 25%,
+			transparent 25%,
+			transparent 74%,
+			purple 75%,
+			orange
+		);
+	background-size: 100px 100px;
+	background-position: 0 0, 50px 50px;
+}
+.card3 {
+	background: repeating-linear-gradient(
+		to right,
+		#2b8001 0%,
+		#ffffff 16%,
+		#1900ff 17%,
+		#fbfb00 34%
+	);
+}
+
+.card4 {
+	background-image: linear-gradient(-41deg, yellow 32%, transparent 0%),
+		linear-gradient(to right top, green 25%, transparent 0%),
+		radial-gradient(at bottom, white, transparent 65%),
+		radial-gradient(at top left, orange, transparent 100%),
+		radial-gradient(at top right, blue, transparent 100%);
+}
+
+.card5 {
+	background: repeating-linear-gradient(
+			190deg,
+			rgba(255, 0, 0, 0.5) 40px,
+			rgba(255, 153, 0, 0.5) 80px,
+			rgba(255, 255, 0, 0.5) 120px,
+			rgba(0, 255, 0, 0.5) 160px,
+			rgba(0, 0, 255, 0.5) 200px,
+			rgba(75, 0, 130, 0.5) 240px,
+			rgba(238, 130, 238, 0.5) 280px,
+			rgba(255, 0, 0, 0.5) 300px
+		),
+		repeating-linear-gradient(
+			-190deg,
+			rgba(255, 0, 0, 0.5) 30px,
+			rgba(255, 153, 0, 0.5) 60px,
+			rgba(255, 255, 0, 0.5) 90px,
+			rgba(0, 255, 0, 0.5) 120px,
+			rgba(0, 0, 255, 0.5) 150px,
+			rgba(75, 0, 130, 0.5) 180px,
+			rgba(238, 130, 238, 0.5) 210px,
+			rgba(255, 0, 0, 0.5) 230px
+		),
+		repeating-linear-gradient(
+			23deg,
+			red 50px,
+			orange 100px,
+			yellow 150px,
+			green 200px,
+			blue 250px,
+			indigo 300px,
+			violet 350px,
+			red 370px
+		);
+}

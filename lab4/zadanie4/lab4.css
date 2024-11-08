@@ -3,24 +3,24 @@
     text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5);
 }
 .kursiv {
-    font-weight: bold; 
+    font-weight: bold;
     font-style: italic;
     text-decoration: underline;
 }
 
 .vidctupbukv{
-    word-spacing: 30px;
+    word-spacing: 45px;
 }
 
 .videltext{
     background-color: yellow;
-    font-weight: bold; 
+    font-weight: bold;
     font-style: italic;
     text-decoration: underline;
     /* word-spacing: 20px; */
 }
 .kursivv{
-    font-weight: bold; 
+    font-weight: bold;
     font-style: italic;
     text-decoration: underline;
     background-color: yellow;
@@ -30,10 +30,15 @@
     background-color: rgb(188, 0, 0);
 }
 
-.text-background{
-    color: #000000;
-    text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.831);
+.text-background span span {
+    font-style: italic; /* Курсивність */
+    font-weight: bold; /* Жирність */
+    text-decoration: underline; /* Підкреслення */
 }
+div .text-background span {
+    background-color: yellow; /* Жовтий фон */
+}
+
 
 .perekleslenevel{
     background-color: rgba(31, 31, 31, 0.753);
@@ -51,16 +56,45 @@
 }
 
 .zirne{
-    font-weight: bold; 
+    font-weight: bold;
 }
 
 .otstup{
     text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.831);
-    text-indent: 30px;
+    text-indent: 45px;
     line-height: 3;
 }
 
 .redtext{
     color: red;
-    font-weight: bold; 
+    font-weight: bold;
+}
+span span {
+    background-color: gray; /* Сірий фон */
+    text-decoration: line-through; /* Перекреслює текст */
+    color: black; /* Чорний колір тексту для контрасту */
+}
+ol span span {
+    font-size: 18px; /* Розмір шрифту */
+    text-transform: uppercase; /* Переведення тексту у верхній регістр */
+}
+section > p {
+    text-shadow: 3px 3px 5px rgba(122, 8, 8, 0.96); /* Тінь до тексту */
+    text-indent: 50px; /* Величина відступу першого рядка */
+}
+img + p {
+    background-color: brown; /* Колір фону - коричневий */
+}
+section + p {
+    color: red; /* Червоний колір тексту */
+}
+.text-bold > section > p {
+    line-height: 45px; /* Міжрядковий інтервал тексту 45px */
+}
+.text-bold > p {
+    font-weight: bold; /* Жирність тексту */
+}
+/* 4.7: Інтервал між словами 50px для абзаців з класом .text-background в <div> */
+.text-background {
+    word-spacing: 50px; /* Інтервал між словами 50px */
 }

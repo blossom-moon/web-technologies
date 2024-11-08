@@ -1,0 +1,32 @@
+.container {
+    position: relative;
+    display: flex;
+    gap: 10px;
+}
+.block {
+    
+    background-color: gray;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    display: none;
+    position: absolute;
+}
+.block1 {
+    width: 200px;
+    height: 50px;
+    background-color: forestgreen;
+    display: flex;
+    position: static;
+}
+.block2 {
+    width: 620px;
+    height: 200px;
+    background-color: deepskyblue;
+    top: 70px;
+    left: 0;
+}
+
+.block1:hover + .block2 {
+    display: flex;
+}

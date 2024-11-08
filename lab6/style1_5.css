@@ -1,0 +1,54 @@
+header img {
+	float: left;
+	width: 100px;
+	height: 100px;
+}
+header ul {
+	list-style: none;
+	margin: 0;
+	padding: 15px;
+	float: right;
+}
+header li {
+	margin: 10px;
+	float: left;
+}
+header li a {
+	display: inline-block;
+	padding: 10px;
+	color: #ffffff;
+	background: rgb(155, 84, 3);
+}
+.column {
+	column-count: 3;
+	column-gap: 35px;
+	column-width: 100px;
+}
+.border {
+	margin-top: 20px;
+	border-right: 5px dotted rgb(212, 38, 38);
+	border-left: 5px dotted rgb(212, 38, 38);
+}
+
+main div {
+	width: 1140px;
+	padding: 0 20px 0 20px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+img {
+	margin: 10px;
+	width: 200px;
+}
+.right {
+	float: right;
+}
+.left {
+	float: left;
+}
+
+p {
+	text-align: justify;
+	margin: 10;
+}
